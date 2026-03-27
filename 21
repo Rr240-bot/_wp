@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>張博逸的個人網頁</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-top: 10px solid #FF0000; /* 這裡用了你問的 FF (純紅色) */
+            width: 300px;
+        }
+        h1 { color: #333; }
+        .info { margin-bottom: 10px; color: #555; }
+        .label { font-weight: bold; color: #000; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>基本資料</h1>
+        <hr>
+        <div class="info"><span class="label">姓名：</span>張博逸</div>
+        <div class="info"><span class="label">學號：</span>111410521</div>
+        <div class="info"><span class="label">性別：</span>生理男</div>
+        <div class="info"><span class="label">畢業學校：</span>龍津高中</div>
+        <div class="info"><span class="label">身高：</span>177cm</div>
+        <div class="info"><span class="label">興趣：</span>打籃球</div>
+        
+        <br>
+        <p>想了解更多？ <a href="https://www.google.com/search?q=龍津高中">搜尋我的母校</a></p>
+    </div>
+
+</body>
+</html>
