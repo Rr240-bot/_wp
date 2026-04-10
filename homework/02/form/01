@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人資料調查問卷</title>
+    <style>
+        body {
+            font-family: "Microsoft JhengHei", Arial, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box; /* 確保寬度包含 padding */
+            font-size: 14px;
+        }
+
+        .radio-group, .checkbox-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 5px;
+        }
+
+        .radio-group label, .checkbox-group label {
+            font-weight: normal;
+            display: inline;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>個人資料問卷</h2>
+    <form action="#" method="post">
+        
+        <div class="form-group">
+            <label for="name">全名</label>
+            <input type="text" id="name" name="name" placeholder="請輸入姓名" required>
+        </div>
+
+        <div class="form-group">
+            <label>性別</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">男</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">女</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">其他</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="birthday">出生日期</label>
+            <input type="date" id="birthday" name="birthday">
+        </div>
+
+        <div class="form-group">
+            <label for="email">電子郵件</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">連絡電話</label>
+            <input type="tel" id="phone" name="phone" placeholder="0912-345-678">
+        </div>
+
+        <div class="form-group">
+            <label for="job">目前職業</label>
+            <select id="job" name="job">
+                <option value="">請選擇</option>
+                <option value="student">學生</option>
+                <option value="employee">上班族</option>
+                <option value="freelancer">自由接案</option>
+                <option value="business">經商</option>
+                <option value="other">其他</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>興趣愛好</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="hobby1" name="hobby" value="reading">
+                <label for="hobby1">閱讀</label>
+                <input type="checkbox" id="hobby2" name="hobby" value="travel">
+                <label for="hobby2">旅遊</label>
+                <input type="checkbox" id="hobby3" name="hobby" value="sport">
+                <label for="hobby3">運動</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="message">自我介紹或備註</label>
+            <textarea id="message" name="message" rows="4" placeholder="請隨意填寫..."></textarea>
+        </div>
+
+        <button type="submit">提交問卷</button>
+    </form>
+</div>
+
+</body>
+</html>
